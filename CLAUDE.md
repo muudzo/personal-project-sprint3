@@ -6,6 +6,10 @@ This folder is my Interactive Design Studio Sprint 3 personal project. Always lo
 
 Candidate projects mapped on the Skill × Challenge / Flow diagram are in `PROJECT_IDEAS.md`.
 
+The chosen project, **Which Bin?**, has its design spec, research, Figma handoff and next steps here. Start every session from its §0 "Where we are", and update it at the end:
+
+@WHICH_BIN_SPEC.md
+
 My study programme's competencies, learning outcomes, and credit status (open: N2 Organize 6, Create 6, Learn 3, plus 30 EC at N3):
 
 @LEARNING_OUTCOMES.md

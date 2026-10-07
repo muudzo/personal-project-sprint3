@@ -128,13 +128,13 @@ Lecturer's placements on the flow model: *Setting up my own server* → Anxiety 
 | **44** | 26–30 Oct | Documentation / finish open brief |
 | 45–46 | 2–13 Nov | Midterm assessments |
 
-That's about **3 working weeks**. Scope has to fit.
+**Confirmed 6 Oct: deadline Fri 23 Oct.** The project runs in weeks 41 and 43; the autumn break is off. Scope has to fit two working weeks.
 
 ---
 
 ## 7. Not in the deck (ask the lecturers)
 
-- [ ] Exact deliverables for week 44 (process book? video? live demo?)
+- [ ] Exact deliverables for Fri 23 Oct (process book? video? live demo?)
 - [ ] Assessment criteria / rubric for midterms
 - [ ] Solo or group allowed?
 - [ ] Budget / materials / makerspace access (Arduino, laser cutter, riso)
@@ -144,17 +144,28 @@ That's about **3 working weeks**. Scope has to fit.
 
 ## 8. Project status (update as decisions are made)
 
-- **Chosen idea:** _TBD_ (see `PROJECT_IDEAS.md`)
-- **Theme(s):** _TBD_
-- **Target audience:** _TBD_
-- **Skill/Challenge position:** _TBD_
-- **External test plan (who, where, when):** _TBD_
+- **Chosen idea:** **Which Bin?** A web game that teaches the local Dutch waste-sorting rules: drag everyday items into the right bin, with escalating speed and a "real life" mode based on the rules of the tester's own municipality.
+- **Theme(s):** Play + Invisible/Visible (the hidden, municipality-specific sorting rules become visible and learnable)
+- **Target audience:** International students and expats in the Netherlands who don't know the local sorting rules
+- **Skill/Challenge position:** High skill (UI/interaction, usability testing) + big challenge (game design and pacing, a working web build, original research into the rules) → Flow
+- **Differentiation:** The existing tools (Afvalwijzer at 1.9/5 from about 1,400 reviews, and Milieu Centraal's Afvalscheidingswijzer) are lookup utilities. Ours is a game that builds a habit. Design decisions taken from their reviews: no login, a "rules last checked" date, no push notifications, and a clear state for a city that isn't covered yet.
+- **External test plan (who, where, when):** Remote, by sharing a link, with think-aloud on a video call. Test 1: 2 internationals on the mid-fi Figma screens (Wed 7 Oct). Test 2: 4+ on build v1 (Mon 19 Oct). Test 3: 3+ on build v2 with the database (Thu 22 Oct). Recruit through my own network and international student groups, and book the week-43 testers before the autumn break.
 
 ### Decision log
 | Date | Decision | Why |
 |---|---|---|
 | 2026-10-05 | Brief analysed, context files created | Kick-off |
 | 2026-10-05 | Learn N2 (3 EC) storyline: transfer the internship lesson ("deliver results however little time you have") to catching up on the 3 missed weeks | Missed wk 36–38; see `LEARNING_OUTCOMES.md` §1 and §7 |
+| 2026-10-05 | Whole project to be done in one week (Mon 5 – Sun 11 Oct), not the 3 weeks in §6 | My statement. Still to confirm the actual deadline with the lecturer |
+| 2026-10-05 | Rejected: subscription checker (bank CSV / email lookup) | Testers wouldn't hand over bank data. No API exists, and scraping would raise GDPR problems |
+| 2026-10-05 | Chose **Which Bin?** over Parent Tech Rescue, Flat Ledger and Hold Music Navigator | Clearest gap in the competition, Play theme, no personal data, easy to test remotely, and the competitor reviews give clear design decisions. Other sectors researched: flatmate apps are very crowded (Splitwise 1.8/5 on Trustpilot over its free daily cap; Tody hides who does more). Remote tech support is hard because seniors struggle to *start* a session (TeamViewer, Quick Assist). Phone-menu tools have trust problems (GetHuman 2.5/5: outdated or compromised numbers). Letter decoders (xPlainly, Deklar), dinner, symptom, deadline and rental-contract tools are all well served already |
+| 2026-10-05 | Plan of action tracked in Jira ([SCRUM board](https://tatendawalters.atlassian.net/jira/software/projects/SCRUM/boards/1), sprint "Which Bin? · Week 41") | Timestamped plan, monitoring and interventions log = Organize N2 evidence. Learn N2 catch-up kept in its own epic so the two kinds of evidence stay apart |
+| 2026-10-06 | Sprint 3 claims **Create N2 (6) + Learn N2 (3) = 9 EC**. Organize N2 (6) moves to a group project | Mentor said about 9 EC is the max for this sprint. Create has the most evidence, and the Learn storyline (missed weeks) only exists now. Organize N2 needs team talents, which a solo project can't show well |
+| 2026-10-06 | Deadline **Fri 23 Oct**, confirmed by the lecturer: the project runs in weeks 41 + 43, autumn break off. Replaces the one-week plan | Two working weeks give room for a database and a third test round |
+| 2026-10-06 | Build v2 (week 43) adds an anonymous answer database (Supabase, EU region) | It has a job players see: "x of y players got this wrong too" makes shared confusion visible (Invisible/Visible). It also measures learning for the success criteria, stores city requests, and shows full-stack skills. No personal data, and the game works without it |
+| 2026-10-06 | Third test round added (test 3 on build v2, Thu 22 Oct) | Every iteration now gets tested with the target group (Create N2: regularly involve stakeholders) |
+| 2026-10-06 | Learn N2 goal tightened and extended with **fair use of AI** in my studies (own AI rules, AI-use log, explaining my code without AI) | I use AI heavily in this project (Figma, Jira, code). Setting my own rules for it is real, application-oriented learning, and it keeps the "I teach myself to code" claim honest |
+| 2026-10-07 | Municipality confirmed: **Leeuwarden (Omrin)**. The real bin set replaces the placeholder: Sortibak (grey; also plastic, cans and drink cartons), Biobak, Papierbak, Glasbak, Textielbak, plus not-a-bin (kca, milieustraat) | From Omrin's *Afvalwijzer 2026* (Dutch + English). Plastic in the Sortibak is the rule most likely to surprise newcomers: the core "invisible rule" for the game. The English guide already exists, so the game competes on engagement, not information |
 
 ---
 
@@ -163,6 +174,6 @@ That's about **3 working weeks**. Scope has to fit.
 1. **Check every suggestion against Section 2 (requirements) and Section 3 (themes).** If an idea fails one, say so.
 2. **Push toward Flow.** Ideas should use my existing high skills (interaction/UI design, prototyping, user testing) *and* carry a big challenge. Flag anything that slides into "just an app concept" (comfort zone).
 3. **Keep the three ingredients visible:** challenging, fun, personal.
-4. **Respect the timeline:** about 3 working weeks, with an autumn break in the middle.
+4. **Respect the timeline:** two working weeks (41 and 43), deadline Fri 23 Oct. The autumn break is off.
 5. **Testing outside class is mandatory.** Every plan needs a realistic way to reach non-classmates.
 6. Update Section 8 when decisions are made.
